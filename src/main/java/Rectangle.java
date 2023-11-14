@@ -1,4 +1,5 @@
 public class Rectangle implements AreaAndPerimeter{
+
     int sideA = 10;
     int sideB = 5;
 
