@@ -1,5 +1,5 @@
 public interface AreaAndPerimeter {
-    void getArea();
+    int getArea();
 
-    void getPermieter();
+    int getPerimeter();
 }
