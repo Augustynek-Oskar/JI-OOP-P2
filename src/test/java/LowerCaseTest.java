@@ -3,7 +3,7 @@ import org.junit.jupiter.api.Assertions;
 
 public class LowerCaseTest extends TestCase {
 
-    public void testFormatText() {
+    public void testFormatTextShouldReturnLowerCaseString() {
         String text = "Text";
 
         LowerCase lowerCase = new LowerCase();
