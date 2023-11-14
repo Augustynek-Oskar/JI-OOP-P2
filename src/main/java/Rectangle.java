@@ -1,2 +1,14 @@
-public class Rectangle {
+public class Rectangle extends Shape {
+    int sideA = 2;
+    int sideB = 4;
+
+    @Override
+    public float getArea() {
+        return sideA * sideB;
+    }
+
+    @Override
+    public float getPerimeter() {
+        return 2 * (sideA) + 2 * (sideB);
+    }
 }
