@@ -8,6 +8,6 @@ public class Square extends Shape {
 
     @Override
     public float getPerimeter() {
-        return sideA + sideA + sideA + sideA;
+        return sideA * 4;
     }
 }
