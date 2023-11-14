@@ -1,5 +1,5 @@
 public abstract class Message {
-    public String getMessage() {
-        return "Message";
-    }
+
+    public abstract String getMessage();
+
 }
