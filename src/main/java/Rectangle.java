@@ -1,4 +1,4 @@
-public class Rectangle extends Shape {
+public class Rectangle extends Square {
     int sideA = 2;
     int sideB = 4;
 
@@ -9,6 +9,6 @@ public class Rectangle extends Shape {
 
     @Override
     public float getPerimeter() {
-        return 2 * (sideA) + 2 * (sideB);
+        return (2 * sideA) + (2 * sideB);
     }
 }
