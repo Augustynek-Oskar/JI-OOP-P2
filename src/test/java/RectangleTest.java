@@ -14,4 +14,17 @@ public class RectangleTest extends TestCase {
         int result = rectangle.getPerimeter();
         Assertions.assertEquals(result, 30);
     }
+public class RectangleTest extends TestCase {
+
+    public void testGetAreaShouldReturnEight() {
+        Rectangle rectangle = new Rectangle();
+        float result = rectangle.getArea();
+        Assertions.assertEquals(result, 8);
+    }
+
+    public void testGetPerimeterShouldReturnTwelve() {
+        Rectangle rectangle = new Rectangle();
+        float result = rectangle.getPerimeter();
+        Assertions.assertEquals(result,12);
+    }
 }
