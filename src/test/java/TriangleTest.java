@@ -4,9 +4,8 @@ import org.junit.jupiter.api.Assertions;
 public class TriangleTest extends TestCase {
 
     public void testTestToString() {
-        Triangle triangle = new Triangle();
-        int height = 12;
-        int width = 10;
+        Triangle triangle = new Triangle(10,12);
+
 
         String result = triangle.toString();
 
