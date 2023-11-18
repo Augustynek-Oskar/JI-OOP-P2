@@ -1,20 +1,15 @@
 import junit.framework.TestCase;
 import org.junit.jupiter.api.Assertions;
 
-import java.util.concurrent.TransferQueue;
 
 public class TriangleTest extends TestCase {
 
-    public void testGetAreaShouldReturnSeventeenPointFive() {
-        Triangle triangle = new Triangle();
-        float result = triangle.getArea();
-        Assertions.assertEquals(result, 17.5f);
+    public void testTestToString() {
+        Triangle triangle = new Triangle(10, 12);
 
-    }
 
-    public void testGetPerimeterShouldReturnTwentyTwo() {
-        Triangle triangle = new Triangle();
-        float result = triangle.getPerimeter();
-        Assertions.assertEquals(result, 22);
+        String result = triangle.toString();
+
+        Assertions.assertEquals("Triangle {width= 10, height= 12}", result);
     }
 }
