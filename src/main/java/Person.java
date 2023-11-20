@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Person {
     String name;
     String surname;
@@ -13,13 +15,16 @@ public class Person {
         if (obj == this) {
             return true;
         }
-        if (!(obj instanceof Person)){
+        if (!(obj instanceof Person)) {
             return false;
         }
         Person one = (Person) obj;
 
         return name.equals(one.name) && surname.equals(one.surname) && Integer.compare(age, one.age) == 0;
     }
-    public native int hashCode();
+
+    public int hashCode() {
+        return Objects.hash(name, surname, age);
+    }
 
 }
